@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حياتي البسيطة</title>
+
+    <!-- Google Font for Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        direction: rtl;
+        background-image: linear-gradient(to right, rgb(243, 239, 239), rgb(92, 88, 88));
+        font-family: 'Amiri', serif;
+        font-style: oblique;
+      }
+      h1 {
+        font-size: 2.5rem;
+        color: wheat;
+      }
+      h2 {
+        font-size: 1.5rem;
+        color: rgb(56, 54, 54);
+      }
+      header {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        color: wheat;
+        text-align: center;
+      }
+      header img {
+        width: 200px; /* Adjust image size */
+        height: auto;
+        border-radius: 50%; /* Optional: to make the image round */
+        margin-bottom: 20px; /* Space between image and text */
+      }
+      article {
+        width: 60%;
+        margin: 0 auto;
+        padding-bottom: 100px;
+        padding-top: 110px;
+      }
+
+      #hobbies {
+        font-size: 0.86cm;
+        color: rgba(0, 0, 0, 0.315);
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 1px;
+      }
+      ul {
+        padding: 10px;
+        list-style-type: circle;
+        margin: 1%;
+        font-size: 0.6cm;
+        color: whitesmoke;
+        text-align: right;
+      }
+      li {
+        padding: 3.5px;
+        background-color: grey;
+        float: right;
+        margin: 3px;
+      }
+      footer {
+        margin-top: 30px;
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+      }
+      #logo{
+        width: 100px;
+        height: 100px;
+      border-radius: 50%;
+      filter: contrast(00.86cm);
+      }
+      #email {
+        width: 100%;
+        padding-right: 20px;
+        display: contents;
+      }
+      #face {
+        padding-right: 30px;
+        display: contents;
+      }
+      .image-container {
+        text-align: center; 
+        margin-top: 30px;
+      }
+      .image-container img {
+        width: 30%; /* Adjust width as necessary */
+        height: auto;
+        border-radius: 15px; /* Optional: to round the corners */
+      }
+      @media screen and (max-width: 768px) {
+        body {
+          background-image: none; /* Optional: remove gradient for small screens */
+        }
+        article {
+          width: 90%;
+          padding-top: 50px;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 1.2rem;
+        }
+        #hobbies {
+          font-size: 0.8cm;
+        }
+        ul {
+          padding: 10px;
+          font-size: 0.5cm;
+        }
+        .image-container img {
+          width: 80%;
+        }
+      }
+
+      /* Media query for print */
+      @media print {
+        body {
+          background-image: none; /* No background for print */
+          color: black; /* Ensure text is black */
+        }
+        header {
+          text-align: left;
+          font-size: 1.2rem;
+        }
+        footer {
+          display: none; /* Hide footer when printing */
+        }
+        .image-container img {
+          width: 100%; /* Adjust image size for print */
+          border-radius: 0;
+        }
+        ul {
+          padding-left: 0;
+          list-style-type: none; /* Remove bullet points */
+        }
+        li {
+          background-color: transparent; /* Remove background color from list items */
+        }
+      }
+    </style>
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="logo.jpg" alt="My Image">
+    <h1>تعريف عني:</h1>
+    <h2>"مرحبًا! اسمي علي، وأنا شخص شغوف بالتعلم واستكشاف العالم من حولي. أحب الطبيعة وأجد السعادة في التفاصيل الصغيرة. أسعى دائمًا لتحقيق التوازن بين العمل والحياة والاستمتاع بكل لحظة."</h2>
+  </header>
+  
+  <article>
+    <nav id="hobbies">هواياتي:</nav>
+    <ul>
+      <li >قراءة الكتsب</li> 
+      <li>الرسم والتلوين</li> 
+      <li>المشي في الطبيعة</li> 
+      <li>تعلم أشياء جديدة</li> 
+    </ul>
+    <div class="image-container">
+      <img src="person.jpg" alt="Hobbies Image">
+    </div>
+  </article>
+
+  <footer>
+    <p>
+      البريد الإلكتروني: <a id="email" href="mailto:ali@example.com">ali@example.com</a><br>
+      الموقع الخاص: <a id="face" href="https://www.facebook.com">رابط صفحتنا</a>
+    </p>
+  </footer>
+</body>
+</html>
